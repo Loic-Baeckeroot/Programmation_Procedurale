@@ -36,10 +36,4 @@ int main() {
 
     cout<<"Le temps necessaire est de "<< Temps_total << " heures." << endl;
 
-    // pour separer la partie decimale (sinon cest pas precis) pas necessaires pour le labo
-
-    double decimal_heure = fmod(Temps_total,1); // ici ca va me donner que la partie decimal (modulo de 1)
-    double minutes = decimal_heure * 60; //juste pour avoir les minutes
-    double heures = Temps_total - decimal_heure; //pour avoir les heures sans partie decimale
-    cout<<"plus precis : "<< heures << " Heures et "<< minutes<< " minutes."<<endl;
 }
