@@ -10,7 +10,7 @@ Remarque(s) :
 
 using namespace std;
 
-int main() {
+int main() { //Calcule du temps de trajet
     double dx = 3;
     double dy = 10;
     double L1 = 6;
