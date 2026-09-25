@@ -5,8 +5,6 @@ Date : 25/09/2026
 But : Calcul du temps de trajet
 Remarque(s) :
 --------------------------- */
-
-
 #include <iostream>
 #include <cmath>
 
@@ -18,22 +16,21 @@ int main() {
     double L1 = 6;
     double s1 = 5;
     double s2 = 2;
-    double L2 = sqrt(pow(dx,2)+pow((dy-L1),2));
     double Temps_total = 0.0;
 
     //QUESTION BONUS//
-    cout<<"Veuillez rentrer la distance L1: "<<endl;
+    cout<<"Veuillez rentrer la distance L1 (sachant que 0 <= L1 >= 10): "<<endl;
     cin>>L1;
-    if (L1<0) {
-        cout<<"Veuillez entrer une superieure a 0."<<endl;
+    if ((L1<0)or(L1>10)) {
+        cout<<"Attention! 0 <= L1 >= 10"<<endl;
         return 0;
     }
 
+    double L2 = sqrt(pow(dx,2)+pow((dy-L1),2));
 
     Temps_total = Temps_total + L1/s1; //calcul du temps necessaire pour parcourir L1
 
     Temps_total = Temps_total + L2/s2; //calcul du temps necessaire pour parcourir L2
 
     cout<<"Le temps necessaire est de "<< Temps_total << " heures." << endl;
-
 }
