@@ -19,10 +19,10 @@ int main() {
     double Temps_total = 0.0;
 
     //QUESTION BONUS//
-    cout<<"Veuillez rentrer la distance L1 (sachant que 0 <= L1 >= 10): "<<endl;
+    cout<<"Veuillez rentrer la distance L1 (L1 >= 0 AND L1 <= 10): "<<endl;
     cin>>L1;
     if ((L1<0)or(L1>10)) {
-        cout<<"Attention! 0 <= L1 >= 10"<<endl;
+        cout<<"Attention! L1 >= 0 AND L1 <= 10"<<endl;
         return 0;
     }
 
