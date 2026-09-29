@@ -28,7 +28,7 @@ int main() { //Calcule du temps de trajet
 
     double L2 = sqrt(pow(dx,2)+pow((dy-L1),2));
 
-    Temps_total = Temps_total + L1/s1; //calcul du temps necessaire pour parcourir L1
+    Temps_total = L1/s1; //calcul du temps necessaire pour parcourir L1
 
     Temps_total = Temps_total + L2/s2; //calcul du temps necessaire pour parcourir L2
 
