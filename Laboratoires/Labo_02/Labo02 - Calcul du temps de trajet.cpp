@@ -11,11 +11,11 @@ Remarque(s) :
 using namespace std;
 
 int main() { //Calcule du temps de trajet
-    double dx = 3;
-    double dy = 10;
+    const double dx = 3;
+    const double dy = 10;
     double L1 = 6;
-    double s1 = 5;
-    double s2 = 2;
+    const double s1 = 5;
+    const double s2 = 2;
     double Temps_total = 0.0;
 
     //QUESTION BONUS//
@@ -33,4 +33,6 @@ int main() { //Calcule du temps de trajet
     Temps_total = Temps_total + L2/s2; //calcul du temps necessaire pour parcourir L2
 
     cout<<"Le temps necessaire est de "<< Temps_total << " heures." << endl;
+
+    return EXIT_SUCCESS;
 }
