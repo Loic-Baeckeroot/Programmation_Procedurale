@@ -7,11 +7,9 @@ using namespace std;
 
 int main()
 {
-    int n = 3'000'000'000;
-    cout<<n;
-
-
-
-
+    int i = 12;
+    while (i--) {
+        cout << --i << " ";
+    }
     return 0;
 }
