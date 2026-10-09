@@ -1,19 +1,25 @@
+//Loic_Baeckeroot
 #include <iostream>
-#include <cmath>
+#include <cstdlib>
 
 using namespace std;
 
-int main(){
+int main() {
+    int choix=-1;
+    int premier=0;
+    char recommencer = 'O';
+    bool verification = false;
 
-    const int chiffre = 9;
+    while (static_cast<int>(recommencer) == 79){
 
-    const int premier = (chiffre - (10*(chiffre/10)%10)-(chiffre%10))/100; //recupere le premier chiffre
-    const int deuxieme = (chiffre/10)%10; //recupere le deuxieme chiffre
-    const int troisieme =chiffre % 10; //recupere le troisieme chiffre
-
-    const int valeur = premier + deuxieme + troisieme;
-
-    cout<<"la somme des chiffres de "<<chiffre<<" = "<<valeur<<endl;
-
+        while ((not(static_cast<int>(recommencer)==79)) or (not(static_cast<int>(recommencer)==78))) {
+            cout<<endl<<"Voulez-vous recommencer [O/N] : ";
+            cin>>recommencer;
+            if ((static_cast<int>(recommencer)==79)or (static_cast<int>(recommencer)==78)) {
+                break;
+            }
+        }
+    }
     return EXIT_SUCCESS;
 }
+

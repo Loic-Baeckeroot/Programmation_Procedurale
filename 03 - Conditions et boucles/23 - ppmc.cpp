@@ -16,6 +16,7 @@ int main() {
 
     for (int i=1; reponse == -1; i++) {
         if (i % x == 0) {
+
             if (i % y == 0) {
                 reponse = i;
             }
